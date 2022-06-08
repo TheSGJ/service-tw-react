@@ -39,8 +39,8 @@ function App() {
   }
   return (
     <div className="dark:bg-gray-900">
-      <Router>
       <Navbar {...props}/>
+      <Router>
         <Container>
           <Routes>
             <Route path="/" element={<Home />} />
