@@ -3,6 +3,7 @@ import React from "react";
 export default function Home() {
   return (
     <div className="container">
+      
       <Card className="mt-3">
         <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           Noteworthy technology acquisitions 2021
@@ -12,6 +13,7 @@ export default function Home() {
           far, in reverse chronological order.
         </p>
       </Card>
+
     </div>
   );
 }

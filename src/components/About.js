@@ -4,7 +4,7 @@ import React from "react";
 export default function About() {
   return (
     <div className="container">
-      <Accordion>
+      <Accordion flush={true}>
         <Accordion.Panel>
           <Accordion.Title>What is Flowbite?</Accordion.Title>
           <Accordion.Content>

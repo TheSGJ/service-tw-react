@@ -1,12 +1,13 @@
 import "./App.css";
+import * as React from 'react';
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Container } from "@mui/material";
 import { Navbar } from 'responsive-navbar-react'
 import 'responsive-navbar-react/dist/index.css'
-
+import Contact from "./components/Contact";
+import { Container } from "@mui/material";
 function App() {
   const props = {
     items: [
@@ -20,7 +21,7 @@ function App() {
       },
       {
         text: 'Contact',
-        link: '/'
+        link: '/contact'
       }
     ],
     logo: {
@@ -37,18 +38,21 @@ function App() {
       }
     }
   }
+
   return (
     <div className="dark:bg-gray-900">
       <Navbar {...props}/>
       <Router>
-        <Container>
+          <Container>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
-        </Container>
+          </Container>
       </Router>
       <Footer />
+
     </div>
   );
 }
