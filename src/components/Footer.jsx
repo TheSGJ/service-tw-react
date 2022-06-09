@@ -1,10 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import nProgress from "nprogress";
 export default function Footer() {
   let year = new Date().getFullYear();
   const handleUpSc = () => {
-    nProgress.start();
     window.scrollTo(0, 0); 
   }
   return (

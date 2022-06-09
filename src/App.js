@@ -8,17 +8,15 @@ import Contact from "./components/Contact";
 import { Container } from "@mui/material";
 import Navbar from "./components/Navbar";
 import Service from "./components/Service";
-import nProgress from "nprogress";
-function App() {
 
+function App() {
   return (
     <div className="dark:bg-gray-900">
-      
       <Router>
       <Navbar />
           <Container>
           <Routes>
-            <Route path="/" onEnter={() => nProgress.done()} element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/service" element={<Service />} />

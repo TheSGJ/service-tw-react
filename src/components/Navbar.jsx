@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import nProgress from "nprogress";
 export default function Navbar() {
 
     const [navClassMenu, setNavClassMenu] = useState("hidden justify-between items-center w-full md:flex md:w-auto md:order-1");
@@ -18,7 +17,6 @@ export default function Navbar() {
       }
     };
     const clickNavClose = () => {
-      nProgress.start();
       setOpenMenuBar("w-6 h-6");
       setCloseMenuBar("hidden w-6 h-6");
       setNavClassMenu("hidden justify-between items-center w-full md:flex md:w-auto md:order-1")
@@ -99,6 +97,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link to="/service"
+                onClick={clickNavClose}
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Services

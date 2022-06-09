@@ -6,7 +6,7 @@ export default class Service extends Component {
     return (
       <div className="container my-8">
         <Helmet>
-              <title>Service - Service TM</title>
+            <title>Service - Service TM</title>
         </Helmet>
       <h2 className="text-xl text-left font-bold my-4">What is Service TW</h2><br />
       <p className='dark:bg-gray-900'>
