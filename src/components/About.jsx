@@ -1,9 +1,29 @@
 import { Accordion } from "flowbite-react";
 import React from "react";
-
+import { Helmet } from "react-helmet";
 export default function About() {
   return (
     <div className="container">
+      <Helmet>
+        <title>About - Service TM</title>
+      </Helmet>
+      <div className="container my-3">
+      <h2 className="text-xl text-center font-bold my-4">About - Service TW</h2>
+        <h5 className="text-2xl font-bold my-2 tracking-tight text-gray-900 dark:text-white">
+          Service sector companies have grown in the past for few decades. But
+          thier few service sector companies which outperforms the others
+        </h5>
+        <p className="font-normal my-2 text-gray-700 dark:text-gray-400">
+          Service TW is one of startup to provide excellent service. Service
+          sector companies have played a significant role in the tech industry
+          and it's motive is to help other tech companies or even governments to
+          provide. These we have a lot of service companies lying around and you
+          need the right one to fullfill your needs. So Contact Service TW today
+          and quote a deal with us.
+        </p>
+      
+      </div>
+      <h2 className="text-xl font-bold text-center my-4">FAQs:</h2>
       <Accordion flush={true}>
         <Accordion.Panel>
           <Accordion.Title>What is Flowbite?</Accordion.Title>

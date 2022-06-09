@@ -4,12 +4,16 @@ import { useForm, ValidationError } from "@formspree/react";
 import { Card, Toast } from "flowbite-react";
 import Breadcrumb from "flowbite-react/lib/esm/components/Breadcrumb";
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("mvolykjd");
   if (state.succeeded) {
     return (
       <div className="grid place-items-center">
+        <Helmet>
+              <title>Message was sent successfully! | Contact - Service TM</title>
+        </Helmet>
         <Toast className="my-6 mx-1">
           <div className="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-green-100 text-green-500 dark:bg-green-800 dark:text-green-200">
             ✉️
@@ -33,6 +37,9 @@ const Contact = () => {
   }
   return (
     <div>
+        <Helmet>
+              <title>Contact Us - Service TM</title>
+        </Helmet>
       <Breadcrumb
         aria-label="Solid background breadcrumb example"
         className="my-3 grid place-items-center"

@@ -7,7 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact";
 import { Container } from "@mui/material";
 import Navbar from "./components/Navbar";
-
+import Service from "./components/Service";
+import nProgress from "nprogress";
 function App() {
 
   return (
@@ -17,13 +18,14 @@ function App() {
       <Navbar />
           <Container>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" onEnter={() => nProgress.done()} element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/service" element={<Service />} />
           </Routes>
           </Container>
-      </Router>
       <Footer />
+      </Router>
 
     </div>
   );
