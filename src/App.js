@@ -7,8 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact";
 import { Container } from "@mui/material";
 import Navbar from "./components/Navbar";
-function App() {
 
+function App() {
 
   return (
     <div className="dark:bg-gray-900">

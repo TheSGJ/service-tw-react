@@ -16,13 +16,13 @@ export default function Navbar() {
         setCloseMenuBar("hidden w-6 h-6");
         setNavClassMenu("hidden justify-between items-center w-full md:flex md:w-auto md:order-1")
       }
-    }
+    };
   return (
     <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <span className="flex items-center">
           <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            <Link to="/">Service - TW</Link>
+            <Link className="mx-1" to="/">Service TW</Link>
           </span>
         </span>
         <div className="flex md:order-2">
